@@ -26,7 +26,7 @@ class Payment:
             with open(input_path) as input_file:
                 self.options = json.loads(input_file)
 
-    def add_payment_option(self, option_key, option_name):
+    def add_option(self, option_key, option_name):
         """Adds a payment option.
 
         Parameters
@@ -38,7 +38,7 @@ class Payment:
         """
         self.options[option_key] = option_name
 
-    def del_payment_option(self, option_key):
+    def del_option(self, option_key):
         """Deletes a payment option.
 
         Parameters
