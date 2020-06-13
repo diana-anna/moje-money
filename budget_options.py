@@ -1,7 +1,7 @@
 import json
 
 
-class EnhancedList:
+class EnhancedSet:
     """A class to help build the classes to keep track of user options.
 
     This class is used to build other classes, such as a class for keeping
@@ -76,7 +76,7 @@ class EnhancedList:
             json.dump(self.options, out_file)
 
 
-class Payment(EnhancedList):
+class Payment(EnhancedSet):
     """A class to keep track of a user's payment methods.
 
     Attributes
@@ -90,7 +90,7 @@ class Payment(EnhancedList):
             self.options.append("Cash")
 
 
-class Categories(EnhancedList):
+class Categories(EnhancedSet):
     """A class to keep track of a user's budgeting categories.
 
     Attributes
